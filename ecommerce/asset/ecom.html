@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB BUY</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+    </style>
+    <STyle>
+        #b {
+            background-attachment: fixed;
+            background-image: url(/asset/icon/ecom.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .head {
+            text-align: center;
+            color: brown;
+            font-family: Playwrite NG Modern;
+            font-weight: 500;
+            text-decoration: underline;
+            text-shadow: 6px -5px 6px;
+        }
+
+        .head1 {
+            text-align: center;
+            color: rgb(95, 43, 43);
+        }
+
+        #t {
+            font-size: x-large;
+            padding-top: 10%;
+            border: 1cap;
+        }
+
+        .d {
+            border: 3px solid black;
+            width: fit-content;
+            border-radius: 6%;
+            line-height: 4em;
+            margin: auto;
+        }
+        input:hover{
+            border: red solid 3px;
+        }
+        input:focus{
+            color: rgb(36, 19, 196);
+        }
+        button:hover{
+            background-color: brown;
+            border: red solid 3px;
+        }
+    </STyle>
+</head>
+
+<body id="b">
+    <h1 class="head"> WEB BUYS</h1>
+    <h1 class="head1">Welcome to the login page</h1>
+    <div class="d">
+        <center>
+
+            <table id="t">
+
+                <th colspan="2">
+                    <h3 style="text-decoration: underline; background-color: brown;border-radius: 2.5pc;"> LOGIN HERE
+                    </h3>
+                </th>
+                <form action="/asset/home.html">
+                    <tr>
+                        <th> Username : </th>
+                        <th>
+                            <input type="text" id="un" placeholder="Enter Username" required>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th> Password : </th>
+                        <th>
+                            <input type="password" id="pass" placeholder="Enter Password" minlength="8" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <button style="width: 100px; height: 30px; border-radius: 20pc;"> Login</button>
+                </form>
+                </th>
+                </tr>
+        </center>
+    </div>
+</body>
+
+</html>
