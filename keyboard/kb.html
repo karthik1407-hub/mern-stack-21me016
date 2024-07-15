@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="kb.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+         body{
+            background-image:url(/Cookie\ Monster\ HD\ Wallpaper\ FullHDwpp\ Full.jpg);
+            background-position:center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat:no-repeat;
+         }
+
+        button {
+            padding: 1px;
+            margin: 2px;
+            height: 60px;
+            color: white;
+            background: inherit;
+            border-radius:10px;
+            position:relative;
+            justify-content: center;
+        }
+        button:hover{
+            background-color: rgb(50, 157, 219);
+        }
+        .kar {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 5px;
+            background:inherit;
+            border: 1px solid rgb(0, 128, 128);
+            height: auto;
+            width: auto;
+            backdrop-filter: blur(1px);
+            box-shadow: 4px 4px 3px;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        .row2{
+            display: grid;
+            margin-left: 30px;
+            margin-right: 30px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        .row3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        #c {
+            
+            grid-column: 1/-1;
+            background: inherit;
+            border: none;
+            text-align: center;
+            padding: 5px;
+            font-size: 50px;
+            color: white;
+        }
+        .h{
+            backdrop-filter: blur(10px);
+            background-color:rgb(82, 223, 233) ;
+            color: rgb(0, 0, 0);
+            width: fit-content;
+            margin-top: 10%;
+            text-shadow: 4px 4px 6px;
+            border: 2px white solid;
+            border-top-left-radius: 10px;
+            border-end-end-radius: 10px;
+
+        }
+        .space{
+            grid-column: 3/9;
+        }
+        .en{
+            grid-column: 10/12;
+        }
+        .cap{
+            grid-column: 1/3;
+        }
+        .clr{
+            grid-column: 10/12;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <center>
+    <h1 class="h">KEYBOARD</h1>
+    <div class="kar">
+        <div class="row">
+        <input type="text" id="c" placeholder="Type here">
+        </div>    
+        <div class="row">
+        <button class="a1" onclick="appendToDisplay('1')">1</button>
+            <button class="a2" onclick="appendToDisplay('2')">2</button>
+            <button class="a3" onclick="appendToDisplay('3')">3</button>
+            <button class="a4" onclick="appendToDisplay('4')">4</button>
+            <button class="a5" onclick="appendToDisplay('5')">5</button>
+            <button class="a6" onclick="appendToDisplay('6')">6</button>
+            <button class="a7" onclick="appendToDisplay('7')">7</button>
+            <button class="a8" onclick="appendToDisplay('8')">8</button>
+            <button class="a9" onclick="appendToDisplay('9')">9</button>
+            <button class="a0" onclick="appendToDisplay('0')">0</button>
+            <button class="q" onclick="appendToDisplay('q')">q</button>
+            <button class="w" onclick="appendToDisplay('w')">w</button>
+            <button class="e" onclick="appendToDisplay('e')">e</button>
+            <button class="r" onclick="appendToDisplay('r')">r</button>
+            <button class="t" onclick="appendToDisplay('t')">t</button>
+            <button class="y" onclick="appendToDisplay('y')">y</button>
+            <button class="u" onclick="appendToDisplay('u')">u</button>
+            <button class="i" onclick="appendToDisplay('i')">i</button>
+            <button class="o" onclick="appendToDisplay('o')">o</button>
+            <button class="p" onclick="appendToDisplay('p')">p</button>
+            </div>
+            <div class="row2">
+            <button class="a" onclick="appendToDisplay('a')">a</button>
+            <button class="s" onclick="appendToDisplay('s')">s</button>
+            <button class="d" onclick="appendToDisplay('d')">d</button>
+            <button class="f" onclick="appendToDisplay('f')">f</button>
+            <button class="g" onclick="appendToDisplay('g')">g</button>
+            <button class="h1" onclick="appendToDisplay('h')">h</button>
+            <button class="j" onclick="appendToDisplay('j')">j</button>
+            <button class="k" onclick="appendToDisplay('k')">k</button>
+            <button class="l" onclick="appendToDisplay('l')">l</button>
+        </div>
+        <div class="row3">
+            <button class="cap" onclick="cap()"> <i class="bi bi-arrow-up-square-fill"></i> </button>
+            <button class="z" onclick="appendToDisplay('z')">z</button>
+            <button class="x" onclick="appendToDisplay('x')">x</button>
+            <button class="c" onclick="appendToDisplay('c')">c</button>
+            <button class="v" onclick="appendToDisplay('v')">v</button>
+            <button class="b" onclick="appendToDisplay('b')">b</button>
+            <button class="n" onclick="appendToDisplay('n')">n</button>
+            <button class="m" onclick="appendToDisplay('m')">m</button>
+            <button class="clr" onclick="clr('')">clr</button>
+            <button class="x" onclick="appendToDisplay('x')">123</button>
+            <button class="," onclick="appendToDisplay(',')">,</button>
+            <button class="space" onclick="appendToDisplay(' ')"> space</button>
+            <button class="." onclick="appendToDisplay('.')">.</button>
+            <button class="en" onclick="split()">Enter</button>
+        </div>
+        </div>
+    </center>
+    <script src="/kb.js"></script>
+</body>
+
+</html>
