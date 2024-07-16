@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="">
+<style>
+    body{
+        background-image: url(/3d-illustration-boy-running-with-splashes-dirt-around-him\ \(1\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+.head{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 320px;
+    height: 430px;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+    background-color:inherit;
+}
+button:hover{
+    background-color: rgba(232, 230, 235, 0.87);
+}
+button{
+    
+    border: solid black;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    border-radius:20px;
+    font-size: 25px;
+}
+.color{
+    background-color: rgba(177, 84, 9, 0.671);
+    color: rgb(0, 0, 0);
+}
+.color1{
+    background-color: rgba(10, 16, 20, 0.685);
+    color: rgba(238, 238, 238, 0.81);
+}
+.r{
+    background-color: rgba(34, 118, 228, 0.767)
+}
+.e{
+    width: 300px;
+}
+input{
+    grid-column: 1/5;
+    margin: auto;
+    height: 100px;
+    text-align:right;
+    border: none;
+    background-color:inherit;
+    font-size:48px;
+    color: rgb(2, 2, 2);
+}
+h1{
+    text-shadow: 3px 3px 4px rgb(189, 81, 9);
+    font-style: oblique;
+}
+</style>
+</head>
+
+<body align="center">
+    <h1>CALCULATOR</h1>
+    <div class="head ">
+        <input readonly id="display" type="text" placeholder="0"  class="e text-black">
+        <button class="color r" onclick="cleardisplay()">AC</button>
+        <button class="color" onclick="appendtodisplay( '( )')">( )</button>
+        <button class="color" onclick="appendtodisplay( '%')">%</button>
+        <button class="color" onclick="appendtodisplay('/')">/</button>
+        <button class="color1" onclick="appendtodisplay('7')">7</button>
+        <button class="color1" onclick="appendtodisplay('8')">8</button>
+        <button class="color1" onclick="appendtodisplay('9')">9</button>
+        <button class="color" onclick="appendtodisplay('*')">x</button>
+        <button class="color1" onclick="appendtodisplay('4')">4</button>
+        <button class="color1" onclick="appendtodisplay('5')">5</button>
+        <button class="color1" onclick="appendtodisplay('6')">6</button>
+        <button class="color" onclick="appendtodisplay('-')">-</button>
+        <button class="color1" onclick="appendtodisplay('1')">1</button>
+        <button class="color1" onclick="appendtodisplay('2')">2</button>
+        <button class="color1" onclick="appendtodisplay('3')">3</button>
+        <button class="color" onclick="appendtodisplay('+')">+</button>
+        <button class="color" onclick="appendtodisplay('0')">0</button>
+        <button class="color" onclick="appendtodisplay('.')">.</button>
+        <button class="color r" onclick="clr()">del</button>
+        <button class="color eql" onclick="calculate()">=</button>
+        <script src="/calcy.js"></script>
+    </div>
+</center>
+</body>
+
+</html>
