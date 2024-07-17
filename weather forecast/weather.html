@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Kar Weather</title>
+<style>
+    body{
+        background-image: url(/heythatme-cloud.gif);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .card{
+        width:500px;
+        background-position: center;
+        background-attachment: auto;
+        background-size: cover;
+        background-repeat:no-repeat;
+        margin: auto;
+        margin-top: 50px;
+        background-color: inherit;
+        border-radius: 20px;
+        border: 1px solid rgb(250, 249, 249);
+        /* backdrop-filter: blur(5px); */
+        box-shadow: 4px 4px 3px;
+    }
+    .card-title{
+        border-radius: 20px;
+    }
+    .card-body{
+        border-radius: 20px;
+        backdrop-filter:blur(5px) ;
+    }
+    input{
+        border-radius: 20px;
+        background-color: inherit;
+        border: white 1px solid;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="display-4 text-center mt-4"> WEATHER TODAY</h1>
+        <div class="card">
+        <div class="card-title text-center border border m-3 p-3 h1"> Location <br>
+            <input type="text" id="city" placeholder="Enter the Location" class="text-center required">
+        </div>
+        <div class="card-body text-center m-3 border h1">Weather Forecast
+            <p class="text-black display-6" id="location"></p>
+            <p class="text-black display-1 text-start ms-10px" id="temp"></p>
+            <p class="text-black display-1 text-start ms-10px" id="country"> </p>
+            <p class="text-black display-6 " id="wind"></p>
+            <p class="text-black display-6 " id="weather">It's a great day.<br><span class="lead">(Search for the location which you wanna know it's weather)</span></p>
+        </div>
+    </div>
+</div>
+<script src="weather.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
